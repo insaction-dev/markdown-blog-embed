@@ -97,6 +97,10 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
+# Code editors configuration
+.vscode/settings.json
+.idea/workspace.xml
+
 # mkdocs documentation
 /site
 

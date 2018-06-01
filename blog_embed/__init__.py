@@ -1,0 +1,1 @@
+"""Allows custom embeds of other websites' data through simple link copy-paste"""
