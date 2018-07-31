@@ -7,7 +7,7 @@ class HTMLRendererMixin:
         pass
 
 
-class minxins.IFrameRendererMixin(HTMLRendererMixin):
+class IFrameRendererMixin(HTMLRendererMixin):
     def render(self, url, width, height):
         iframe = util.etree.Element('iframe')
         iframe.set('width', width)
