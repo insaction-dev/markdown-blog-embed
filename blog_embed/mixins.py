@@ -8,13 +8,15 @@ class HTMLRendererMixin:
 
 
 class IFrameRendererMixin(HTMLRendererMixin):
-    def render(self, url, width, height):
+    def render(self, url, width, height, extra_attributes=None):
         iframe = util.etree.Element('iframe')
         iframe.set('width', width)
         iframe.set('height', height)
         iframe.set('src', url)
         iframe.set('allowfullscreen', 'true')
         iframe.set('frameborder', '0')
+        for attr, value in extra_attributes.items():
+            iframe.set(attr, value)
 
         container = util.etree.Element('div')
         container.set('class', 'video-container')
