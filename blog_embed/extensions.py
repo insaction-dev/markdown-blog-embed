@@ -7,7 +7,7 @@ RE_YT_SHORT = r'([^(]|^)https?://youtu\.be/(?P<youtubeid>\S[^?&/]+)?'
 
 RE_YOUTUBE = r'([^(]|^)https?://www\.youtube\.com/watch\?\S*v=(?P<youtubeid>\S[^&/]+)'
 
-RE_VIMEO = r'([^(]|^)https?://(www.)?vimeo\.com/(?P<vimeoid>\d+)\S*'
+RE_VIMEO = r'(?:[^(]|^)https?://(?:www\.)?vimeo\.com/(?:video)?/(?P<vimeoid>\d+)\S*'
 
 
 class LinksToEmbedExtension(markdown.Extension):
