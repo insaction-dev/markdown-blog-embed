@@ -7,6 +7,7 @@ name = "pypi"
 prospector = "*"
 "autopep8" = "*"
 rope = "*"
+nose = "*"
 
 [packages]
 markdown = "*"
